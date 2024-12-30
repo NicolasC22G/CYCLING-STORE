@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeBasicComponent implements OnInit {
 
+  mailRegexpValidation = new RegExp(/^([-_0-9a-z]+[\.])*[-_0-9a-z]+@[-_0-9a-z]*([-_0-9a-z][\.]?)+[-_0-9a-z](\.[-_0-9a-z]+)$/);
+
   constructor() { }
 
   ngOnInit() {
